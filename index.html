@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Website</title>
+  
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header with Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="https://st4.depositphotos.com/1563253/27998/i/450/depositphotos_279989046-stock-photo-commerce-web-sticker-button.jpg" style="height:70px ;"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">Cart <span id="cart-count">0</span></a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      </form>
+    </div>
+  </nav>
+
+  <!-- Product Display Section -->
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="product1.jpg" class="card-img-top" alt="Makeup">
+          <div class="card-body">
+            <h5 class="card-title">Makeup</h5>
+            <p class="card-text">A subset of cosmetics is called "make-up," which refers primarily to coloring products  appearance.</p>
+            <p class="card-text">৳ 2000</p>
+            <button class="btn btn-primary add-to-cart" data-product="Makeup" data-price="2000">Add to Cart</button>
+          </div>
+        </div>
+        
+      </div>
+      <!-- Repeat for more products -->
+
+      
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="product2.jpg" class="card-img-top" alt="Serum">
+          <div class="card-body">
+            <h5 class="card-title">Serum</h5>
+            <p class="card-text">Serum (/ˈsɪərəm/) is the fluid and solvent component of blood which does not play a role in clotting.</p>
+            <p class="card-text">৳ 1500</p>
+            <button class="btn btn-primary add-to-cart" data-product="Serum" data-price="1500">Add to Cart</button>
+          </div>
+        </div>       
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="product3.jpg" class="card-img-top" alt="Toner">
+          <div class="card-body">
+            <h5 class="card-title">Toner</h5>
+            <p class="card-text">Toner is the substance used in a photocopier or laser printer that forms the printed image or text on paper.</p>
+            <p class="card-text">৳ 1200</p>
+            <button class="btn btn-primary add-to-cart" data-product="Toner" data-price="1200">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="product4.jpg" class="card-img-top" alt="Serum-2">
+          <div class="card-body">
+            <h5 class="card-title">Serum-2</h5>
+            <p class="card-text">The clear liquid part of the blood that remains after blood cells and clotting proteins have been removed.</p>
+            <p class="card-text">৳ 1000</p>
+            <button class="btn btn-primary add-to-cart" data-product="Serum-2" data-price="1000">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="product5.jpg" class="card-img-top" alt="Face Powder">
+          <div class="card-body">
+            <h5 class="card-title">Face Powder</h5>
+            <p class="card-text">The clear liquid part of the blood that remains after blood cells and clotting proteins have been removed.</p>
+            <p class="card-text">৳ 800</p>
+            <button class="btn btn-primary add-to-cart" data-product="Face Powder" data-price="800">Add to Cart</button>
+          </div>
+        </div>  
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="product6.jpg" class="card-img-top" alt="Lotion">
+          <div class="card-body">
+            <h5 class="card-title">Lotion</h5>
+            <p class="card-text">a liquid that you put on your skin in order to protect it, improve its condition.</p>
+            <p class="card-text">৳ 2200</p>
+            <button class="btn btn-primary add-to-cart" data-product="Lotion" data-price="2200">Add to Cart</button>
+          </div>
+        </div>       
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="product7.jpg" class="card-img-top" alt="Cream">
+          <div class="card-body">
+            <h5 class="card-title">Cream</h5>
+            <p class="card-text">Cream is a dairy product composed of the higher-fat layer  of milk before homogenization.</p>
+            <p class="card-text">৳ 2800</p>
+            <button class="btn btn-primary add-to-cart" data-product="Cream" data-price="2800">Add to Cart</button>
+          </div>
+        </div>       
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="product8.jpg" class="card-img-top" alt="Liquid Foundation">
+          <div class="card-body">
+            <h5 class="card-title">Liquid Foundation</h5>
+            <p class="card-text">A liquid foundation is a base product used in makeup applications. </p>
+            <p class="card-text">৳ 3000</p>
+            <button class="btn btn-primary add-to-cart" data-product="Liquid Foundation" data-price="3000">Add to Cart</button>
+          </div>
+        </div>       
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="product6.jpg" class="card-img-top" alt="Product 6">
+          <div class="card-body">
+            <h5 class="card-title">Sunglass</h5>
+            <p class="card-text">Short description of Product 1</p>
+            <p class="card-text">৳ 1000</p>
+            <button class="btn btn-primary add-to-cart" data-product="Product 6" data-price="1000">Add to Cart</button>
+          </div>
+        </div>       
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Cart Modal -->
+  <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cartModalLabel">Your Cart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul id="cart-items"></ul>
+          <p><strong>Total: ৳<span id="cart-total">0.00</span></strong></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Proceed to Checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+  </div> <hr class="my-3"> <p class="mb-0">&copy; Tanjila Akter 2025.</p> </div>
+  </footer>
+
+ 
+
+</body>
+</html>
+
+
+
